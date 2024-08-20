@@ -1,8 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723837463
+::res://::1724076216
+bgm.tscn::PackedScene::5619592051270560501::1724050292::0::1::::<><>::uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd
+bot.tscn::PackedScene::8739873790555049788::1724067140::0::1::::<><>::res://Script/bot.gd<>uid://b2cfq54t4o7hh::::res://Art/robot big.png<>uid://cybkp6fkj3mug::::res://Art/robothandbig.png<>res://Script/Statemachine.gd<>uid://b2w1j0jcuy7r1::::res://Art/Robot small.png<>res://Script/bigPlayer.gd<>uid://di515pxr34cug::::res://Art/Robot hand.png<>res://Script/small.gd<>uid://cy48l1iwfdni3::::res://Audio/explosions.tscn<>uid://bxrbpp3ljhv2::::res://Audio/jump.wav<>uid://d32frsnpio1po::::res://Audio/Player Death soound.wav<>uid://bykpffrsob2st::::res://Audio/switch.wav<>uid://bkjwn0blw0qs::::res://Audio/heavy_jump.wav<>uid://c3m4ikr80pusx::::res://Audio/toni foostep.wav
+credit.md::TextFile::-1::1724067140::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1723921679::0::1::::<><>::
 icon.svg::CompressedTexture2D::1255027820586067283::1723834500::1723835172::1::::<><>::
-level.tscn::PackedScene::4357630705193862038::1723837474::0::1::::<><>::uid://dff7assn7tmtq::::res://Art/Environment tilemap.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://r47eik3pod0v::::res://icon.svg<>uid://ik46s3vgnanc::::res://Sm_box.tscn
-Sm_box.tscn::PackedScene::583971668683635620::1723837378::0::1::::<><>::
+tut_anim.tscn::PackedScene::8574575076165932135::1724063215::0::1::::<><>::res://Levels/tut_anim.gd<>uid://bsownv41mgvrx::::res://Art/Letter5.png<>uid://bv6853wc11gh::::res://Art/Letter1.png<>uid://bao0grjt2cje7::::res://Art/Letter2.png<>uid://mpbw6egy2dds::::res://Art/Letter3.png<>uid://dct25hw8sss6p::::res://Art/Letter4.png<>uid://bwppwstycsysc::::res://Levels/Intro.tres<>uid://nbd0wwr6od78::::res://Art/gdb-gamepad-2(all)/gdb-keyboard-2.png
+win_screen.gd::GDScript::-1::1724048497::0::1::::<>CanvasLayer<>::
+Win_screen.tscn::PackedScene::737722239528116331::1724056573::0::1::::<><>::res://win_screen.gd<>uid://iuxffrcvja7t::::res://Art/Level completef1 1.png<>uid://cgj101fu72pxw::::res://Art/Level completef1 2.png<>uid://b82hjo8j0orsb::::res://Art/Level completef1 3.png<>uid://widjynlaiay0::::res://Art/Level completef1 4.png<>uid://nrbsmx4v1m25::::res://Art/Level completef1 5.png
 ::res://addons/::1723836160
 ::res://addons/phantom_camera/::1723836162
 plugin.cfg::TextFile::-1::1723836162::0::1::::<><>::
@@ -130,6 +135,91 @@ phantom_camera_host.gd::GDScript::-1::1723836162::0::1::::PhantomCameraHost<>Nod
 ::res://addons/phantom_camera/scripts/resources/::1723836162
 camera_3d_resource.gd::GDScript::-1::1723836162::0::1::::Camera3DResource<>Resource<>res://addons/phantom_camera/icons/phantom_camera_camera_3d_resource.svg::
 tween_resource.gd::GDScript::-1::1723836162::0::1::::PhantomCameraTween<>Resource<>res://addons/phantom_camera/icons/phantom_camera_tween.svg::
-::res://Art/::1723837457
-Environment tilemap.png::CompressedTexture2D::7522472075669257470::1723835913::1723837457::1::::<><>::
-::res://Assets/::1723837463
+::res://Art/::1724061940
+Big_box.png::CompressedTexture2D::3302250765423891884::1723939807::1723944977::1::::<><>::
+Bus_sprite.png::CompressedTexture2D::4690776072258170609::1724004709::1724003946::1::::<><>::
+Environment tile.png::CompressedTexture2D::8012761364159478211::1724008772::1724008754::1::::<><>::
+Environment tilemap.png::CompressedTexture2D::8468335494112882551::1723841313::1723935229::1::::<><>::
+Keyboard Extras.png::CompressedTexture2D::6874323258811821855::1724061909::1724061926::1::::<><>::
+Keyboard Letters and Symbols.png::CompressedTexture2D::5784149361411692397::1724061909::1724061926::1::::<><>::
+Letter1.png::CompressedTexture2D::115483554406241771::1724057725::1724058255::1::::<><>::
+Letter2.png::CompressedTexture2D::2416851519532164396::1724057725::1724058255::1::::<><>::
+Letter3.png::CompressedTexture2D::873333429134780956::1724057725::1724058255::1::::<><>::
+Letter4.png::CompressedTexture2D::7340556251477645637::1724057725::1724058255::1::::<><>::
+Letter5.png::CompressedTexture2D::3680081295883445533::1724057725::1724058255::1::::<><>::
+Level completef1 1.png::CompressedTexture2D::604204012986322283::1724057701::1724044946::1::::<><>::
+Level completef1 2.png::CompressedTexture2D::5214178489944161272::1724057701::1724044946::1::::<><>::
+Level completef1 3.png::CompressedTexture2D::4758832600950638473::1724057701::1724044946::1::::<><>::
+Level completef1 4.png::CompressedTexture2D::1560869086335599913::1724057701::1724044946::1::::<><>::
+Level completef1 5.png::CompressedTexture2D::947642917553922148::1724057701::1724058255::1::::<><>::
+Light.png::CompressedTexture2D::3230049824910042783::1724009291::1724009296::1::::<><>::
+Mediumbox.png::CompressedTexture2D::8238489720456690305::1723938714::1723944977::1::::<><>::
+robot big.png::CompressedTexture2D::4285981996496852309::1724003195::1724003687::1::::<><>::
+Robot hand.png::CompressedTexture2D::7784337172626146622::1723940875::1723944977::1::::<><>::
+Robot small.png::CompressedTexture2D::4328531813571934428::1724005385::1724007717::1::::<><>::
+robothandbig.png::CompressedTexture2D::6460073585704650062::1723945450::1723945498::1::::<><>::
+Signature.png::CompressedTexture2D::3293526435408965397::1724060042::1724060046::1::::<><>::
+Small box.png::CompressedTexture2D::1491860063676175039::1723937916::1723944977::1::::<><>::
+::res://Art/gdb-gamepad-2(all)/::1724064905
+Alt.png::CompressedTexture2D::3867630775621316405::1724064385::1724064387::1::::<><>::
+D.png::CompressedTexture2D::3293971678835190844::1724063933::1724063935::1::::<><>::
+F.png::CompressedTexture2D::4699503245613461701::1724064802::1724064804::1::::<><>::
+gdb-keyboard-2.png::CompressedTexture2D::914747331188186349::1724061909::1724061941::1::::<><>::
+gdb-playstation-2.png::CompressedTexture2D::344981118674525049::1724061909::1724061941::1::::<><>::
+gdb-switch-2.png::CompressedTexture2D::5617398643743004310::1724061909::1724061941::1::::<><>::
+gdb-xbox-2.png::CompressedTexture2D::6562142221989171697::1724061909::1724061941::1::::<><>::
+Space.png::CompressedTexture2D::3301729500187427795::1724064339::1724064123::1::::<><>::
+Sprite-0004.png::CompressedTexture2D::2490327573515149711::1724064535::1724064537::1::::<><>::
+Sprite-0006.png::CompressedTexture2D::587432921299986181::1724064903::1724064905::1::::<><>::
+::res://Assets/::1724053141
+Environment tile.png::CompressedTexture2D::1108721217835025341::1723952972::1723961192::1::::<><>::
+lg_box.gd::GDScript::-1::1724052137::0::1::::<>RigidBody2D<>::
+Lg_box.tscn::PackedScene::2960377156491711717::1724052312::0::1::::<><>::res://Assets/lg_box.gd<>uid://bnbvt8kwx3f5m::::res://Art/Big_box.png<>uid://dt8irwk7kcxvt::::res://Audio/large grab.wav
+md_box.gd::GDScript::-1::1724053141::0::1::::<>RigidBody2D<>::
+Md_box.tscn::PackedScene::5902677423764749160::1724052156::0::1::::<><>::res://Assets/md_box.gd<>uid://dpm1ysw7yntgb::::res://Art/Mediumbox.png<>uid://cdbck7allu0p8::::res://Audio/medium grabwav.wav
+Sm_box.tscn::PackedScene::583971668683635620::1724052156::0::1::::<><>::res://Script/sm_box.gd<>uid://viwynggectgx::::res://Art/Small box.png<>uid://de68yohv8vbb2::::res://Audio/small_grab.wav
+::res://Audio/::1724055559
+clock-loop.wav::AudioStreamWAV::8497856092030799083::1724049438::1724049442::1::::<><>::
+clock-start.wav::AudioStreamWAV::6508608157068793076::1724049421::1724049442::1::::<><>::
+explosions.tscn::PackedScene::6519265253032893320::1724055559::0::1::::<><>::
+Footsteps.wav::AudioStreamWAV::6113667346484374088::1724055274::1724055276::1::::<><>::
+heavy_jump.wav::AudioStreamWAV::91419083064127574::1724054164::1724054193::1::::<><>::
+jump crushed.wav::AudioStreamWAV::5711301567990379351::1724052581::1724052581::1::::<><>::
+jump.wav::AudioStreamWAV::118704318961914553::1724052581::1724052581::1::::<><>::
+large grab.wav::AudioStreamWAV::8561491812953556201::1724051302::1724051312::1::::<><>::
+medium grabwav.wav::AudioStreamWAV::4985613249241450419::1724051257::1724051312::1::::<><>::
+Player Death soound.wav::AudioStreamWAV::9180622781959602308::1724053076::1724053076::1::::<><>::
+small_grab.wav::AudioStreamWAV::7506060402961899097::1724051233::1724051312::1::::<><>::
+switch.wav::AudioStreamWAV::4092516682122540747::1724053706::1724053727::1::::<><>::
+toni foostep.wav::AudioStreamWAV::6764677154469860019::1724055034::1724055034::1::::<><>::
+::res://fonts/::1724058309
+04B_30__.TTF::FontFile::7354482741262447952::1724058308::1724058309::1::::<><>::
+BMSPA___.TTF::FontFile::6731967389218669132::1724058301::1724058301::1::::<><>::
+Fipps-Regular.otf::FontFile::1183745538808255815::1724058289::1724058289::1::::<><>::
+Minecraft.ttf::FontFile::3579568201157922005::1724058301::1724058301::1::::<><>::
+::res://Levels/::1724076054
+Bgm.gd::GDScript::-1::1724051890::0::1::::<>AudioStreamPlayer<>::
+bgmloop.gd::GDScript::-1::1724051890::0::1::::<>AudioStreamPlayer<>::
+completion_screen.gd::GDScript::-1::1724058628::0::1::::<>Area2D<>::
+Intro.tres::Theme::3962491928263559990::1724059499::0::1::::<><>::uid://bq8772426wo4d::::res://fonts/Minecraft.ttf
+Intro.tscn::PackedScene::2721255378783978590::1724067283::0::1::::<><>::uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Levels/completion_screen.gd<>res://Levels/opener.gd<>uid://iuxffrcvja7t::::res://Art/Level completef1 1.png<>uid://q4od7gjt6ahr::::res://fonts/Fipps-Regular.otf<>uid://bao0grjt2cje7::::res://Art/Letter2.png<>uid://bwppwstycsysc::::res://Levels/Intro.tres<>uid://mpbw6egy2dds::::res://Art/Letter3.png<>uid://dct25hw8sss6p::::res://Art/Letter4.png<>uid://dc1tiyhpycgpk::::res://fonts/04B_30__.TTF<>uid://bsownv41mgvrx::::res://Art/Letter5.png<>uid://bm6n5tqguqrrp::::res://Art/Signature.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://b2cfq54t4o7hh::::res://Art/robot big.png<>uid://cybkp6fkj3mug::::res://Art/robothandbig.png<>uid://bnbvt8kwx3f5m::::res://Art/Big_box.png<>uid://bmawpixycrusd::::res://Art/Light.png<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd
+opener.gd::GDScript::-1::1724058628::0::1::::<>CanvasLayer<>::
+thanksgui.gd::GDScript::-1::1724057401::0::1::::<>CanvasLayer<>::
+thanks_for_playing.tscn::PackedScene::1637266161000068087::1724076041::0::1::::<><>::uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>res://Levels/completion_screen.gd<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Levels/thanksgui.gd<>uid://iuxffrcvja7t::::res://Art/Level completef1 1.png<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://cgj101fu72pxw::::res://Art/Level completef1 2.png<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>uid://b82hjo8j0orsb::::res://Art/Level completef1 3.png<>uid://widjynlaiay0::::res://Art/Level completef1 4.png<>uid://b2cfq54t4o7hh::::res://Art/robot big.png<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://cybkp6fkj3mug::::res://Art/robothandbig.png<>uid://nrbsmx4v1m25::::res://Art/Level completef1 5.png<>uid://bmawpixycrusd::::res://Art/Light.png<>uid://bnbvt8kwx3f5m::::res://Art/Big_box.png<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd
+tut_anim.gd::GDScript::-1::1724062797::0::1::::<>Node2D<>::
+Ware1.tscn::PackedScene::4357630705193862038::1724076054::0::1::::<><>::res://Script/level.gd<>uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Script/completion_check.gd<>uid://krmgbgs6sbbf::::res://Win_screen.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://dwrwpd0o8f06c::::res://bot.tscn<>uid://bmawpixycrusd::::res://Art/Light.png<>res://Levels/Bgm.gd<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/bgmloop.gd<>res://Levels/tut_anim.gd<>uid://bv6853wc11gh::::res://Art/Letter1.png<>uid://bao0grjt2cje7::::res://Art/Letter2.png<>uid://mpbw6egy2dds::::res://Art/Letter3.png<>uid://dct25hw8sss6p::::res://Art/Letter4.png<>uid://bsownv41mgvrx::::res://Art/Letter5.png<>uid://bwppwstycsysc::::res://Levels/Intro.tres<>uid://nbd0wwr6od78::::res://Art/gdb-gamepad-2(all)/gdb-keyboard-2.png<>uid://bm6vh5sel0i6g::::res://Art/gdb-gamepad-2(all)/D.png<>uid://bnbnac4pjhrmp::::res://Art/gdb-gamepad-2(all)/Space.png<>uid://bvdrkw03843lx::::res://Art/gdb-gamepad-2(all)/Alt.png<>uid://bbqlli8gu0fk6::::res://Art/gdb-gamepad-2(all)/Sprite-0004.png<>uid://b77qeqog48a6p::::res://Art/gdb-gamepad-2(all)/F.png<>uid://ims61fhmyhnp::::res://Art/gdb-gamepad-2(all)/Sprite-0006.png
+Ware2.tscn::PackedScene::6207767805507689829::1724067141::0::1::::<><>::res://Script/level.gd<>uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Script/completion_check.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://krmgbgs6sbbf::::res://Win_screen.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://dwrwpd0o8f06c::::res://bot.tscn<>uid://bmawpixycrusd::::res://Art/Light.png<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd
+Ware3.tscn::PackedScene::6429135781367326479::1724067140::0::1::::<><>::res://Script/level.gd<>uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Script/completion_check.gd<>uid://krmgbgs6sbbf::::res://Win_screen.tscn<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://dwrwpd0o8f06c::::res://bot.tscn<>uid://bmawpixycrusd::::res://Art/Light.png<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd
+Ware4.tscn::PackedScene::7202187283584936020::1724067142::0::1::::<><>::res://Script/level.gd<>uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Script/completion_check.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://krmgbgs6sbbf::::res://Win_screen.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://dwrwpd0o8f06c::::res://bot.tscn<>uid://bmawpixycrusd::::res://Art/Light.png<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd
+Ware5.tscn::PackedScene::7113443966928213820::1724067142::0::1::::<><>::res://Script/level.gd<>uid://cqdkh8nxstt3m::::res://Assets/Md_box.tscn<>uid://biga8kaqh8kf2::::res://Assets/Lg_box.tscn<>uid://ik46s3vgnanc::::res://Assets/Sm_box.tscn<>uid://dsweipddmjm6b::::res://Art/Environment tilemap.png<>uid://dmfpaknj21iu2::::res://Art/Environment tile.png<>uid://b73inqpe7737b::::res://Art/Bus_sprite.png<>res://Script/completion_check.gd<>res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd<>uid://krmgbgs6sbbf::::res://Win_screen.tscn<>res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd<>res://addons/phantom_camera/scripts/resources/tween_resource.gd<>uid://dwrwpd0o8f06c::::res://bot.tscn<>uid://bmawpixycrusd::::res://Art/Light.png<>uid://cyy23cguktb3a::::res://Audio/clock-start.wav<>res://Levels/Bgm.gd<>res://Levels/bgmloop.gd
+::res://Script/::1724061892
+bigPlayer.gd::GDScript::-1::1724055082::0::1::::<>NodeState<>::
+bot.gd::GDScript::-1::1723980308::0::1::::Player<>CharacterBody2D<>::
+character_body_2d.gd::GDScript::-1::1723983907::0::1::::<>CharacterBody2D<>::
+completion_check.gd::GDScript::-1::1724050257::0::1::::<>Area2D<>::
+Global.gd::GDScript::-1::1724010577::0::1::::<>Node<>::
+level.gd::GDScript::-1::1724049575::0::1::::<>Node2D<>::
+Node_state.gd::GDScript::-1::1723943235::0::1::::NodeState<>Node<>::
+small.gd::GDScript::-1::1724055346::0::1::::<>NodeState<>::
+sm_box.gd::GDScript::-1::1724061892::0::1::::<>RigidBody2D<>::
+Statemachine.gd::GDScript::-1::1723944521::0::1::::FiniteStateMachine<>Node<>::

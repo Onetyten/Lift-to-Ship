@@ -1,0 +1,180 @@
+[gd_scene load_steps=13 format=3 uid="uid://duft87sux30jb"]
+
+[ext_resource type="Script" path="res://Levels/tut_anim.gd" id="1_jlquk"]
+[ext_resource type="Texture2D" uid="uid://bsownv41mgvrx" path="res://Art/Letter5.png" id="2_8udt6"]
+[ext_resource type="Texture2D" uid="uid://bv6853wc11gh" path="res://Art/Letter1.png" id="3_38bhy"]
+[ext_resource type="Texture2D" uid="uid://bao0grjt2cje7" path="res://Art/Letter2.png" id="4_080k6"]
+[ext_resource type="Texture2D" uid="uid://mpbw6egy2dds" path="res://Art/Letter3.png" id="5_tqvlv"]
+[ext_resource type="Texture2D" uid="uid://dct25hw8sss6p" path="res://Art/Letter4.png" id="6_ap4mo"]
+[ext_resource type="Theme" uid="uid://bwppwstycsysc" path="res://Levels/Intro.tres" id="7_blqps"]
+[ext_resource type="Texture2D" uid="uid://nbd0wwr6od78" path="res://Art/gdb-gamepad-2(all)/gdb-keyboard-2.png" id="8_6wl1u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wlumg"]
+size = Vector2(231, 288)
+
+[sub_resource type="Animation" id="Animation_iuhr0"]
+resource_name = "Open"
+step = 0.03
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_38bhy"), ExtResource("4_080k6"), ExtResource("5_tqvlv"), ExtResource("6_ap4mo"), ExtResource("2_8udt6"), ExtResource("2_8udt6")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Content:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.433333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, false, true, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.00912323),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_wswuk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_38bhy")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Content:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o7sa6"]
+_data = {
+"Open": SubResource("Animation_iuhr0"),
+"RESET": SubResource("Animation_wswuk")
+}
+
+[node name="Tut_anim" type="Node2D"]
+z_index = -3
+position = Vector2(-607, -177)
+script = ExtResource("1_jlquk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8udt6")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(12, -132)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-23.5, 134)
+shape = SubResource("RectangleShape2D_wlumg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_o7sa6")
+}
+
+[node name="Content" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Content"]
+offset_left = -213.0
+offset_top = -208.0
+offset_right = -54.0
+offset_bottom = -185.0
+theme = ExtResource("7_blqps")
+text = "Press to grab boxes:"
+
+[node name="Label4" type="Label" parent="Content"]
+offset_left = -181.0
+offset_top = -175.0
+offset_right = -22.0
+offset_bottom = -152.0
+theme = ExtResource("7_blqps")
+theme_override_colors/font_color = Color(0.223529, 0.321569, 0.192157, 1)
+text = "Keyboard"
+
+[node name="Label5" type="Label" parent="Content"]
+offset_left = -181.0
+offset_top = -30.0
+offset_right = -22.0
+offset_bottom = -7.0
+theme = ExtResource("7_blqps")
+theme_override_colors/font_color = Color(0.223529, 0.321569, 0.192157, 1)
+text = "Keyboard"
+
+[node name="Label2" type="Label" parent="Content"]
+offset_left = -211.0
+offset_top = -63.0
+offset_right = -52.0
+offset_bottom = -40.0
+theme = ExtResource("7_blqps")
+text = "Press to drop boxes:"
+
+[node name="Label3" type="Label" parent="Content"]
+offset_left = 49.0
+offset_top = -101.0
+offset_right = 193.0
+offset_bottom = -66.0
+theme = ExtResource("7_blqps")
+text = "Fill up the truck to get your promotion"
+autowrap_mode = 2
+
+[node name="Gdb-keyboard-2" type="Sprite2D" parent="Content"]
+position = Vector2(-197, -168)
+texture = ExtResource("8_6wl1u")
+hframes = 18
+vframes = 20
+frame = 34
+
+[node name="Gdb-keyboard-3" type="Sprite2D" parent="Content"]
+position = Vector2(-196, -25)
+texture = ExtResource("8_6wl1u")
+hframes = 18
+vframes = 20
+frame = 34
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

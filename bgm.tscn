@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmcf4ihqea2pl"]
+
+[ext_resource type="AudioStream" uid="uid://cyy23cguktb3a" path="res://Audio/clock-start.wav" id="1_oji6k"]
+[ext_resource type="Script" path="res://Levels/Bgm.gd" id="2_hpabl"]
+[ext_resource type="Script" path="res://Levels/bgmloop.gd" id="3_13t0g"]
+
+[node name="Bgm" type="AudioStreamPlayer"]
+stream = ExtResource("1_oji6k")
+script = ExtResource("2_hpabl")
+
+[node name="Bgmloop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_oji6k")
+script = ExtResource("3_13t0g")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
+[connection signal="finished" from="Bgmloop" to="Bgmloop" method="_on_finished"]

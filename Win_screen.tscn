@@ -1,0 +1,141 @@
+[gd_scene load_steps=10 format=3 uid="uid://krmgbgs6sbbf"]
+
+[ext_resource type="Script" path="res://win_screen.gd" id="1_4yof3"]
+[ext_resource type="Texture2D" uid="uid://iuxffrcvja7t" path="res://Art/Level completef1 1.png" id="1_ojpxl"]
+[ext_resource type="Texture2D" uid="uid://cgj101fu72pxw" path="res://Art/Level completef1 2.png" id="2_4kv82"]
+[ext_resource type="Texture2D" uid="uid://b82hjo8j0orsb" path="res://Art/Level completef1 3.png" id="3_6srrx"]
+[ext_resource type="Texture2D" uid="uid://widjynlaiay0" path="res://Art/Level completef1 4.png" id="4_uvolg"]
+[ext_resource type="Texture2D" uid="uid://nrbsmx4v1m25" path="res://Art/Level completef1 5.png" id="5_netvl"]
+
+[sub_resource type="Animation" id="Animation_amyng"]
+resource_name = "Open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_ojpxl"), ExtResource("2_4kv82"), ExtResource("3_6srrx"), ExtResource("4_uvolg"), ExtResource("5_netvl")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/VBoxContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.366667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, false, true]
+}
+
+[sub_resource type="Animation" id="Animation_yi82d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_ojpxl")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/VBoxContainer:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g4nx7"]
+_data = {
+"Open": SubResource("Animation_amyng"),
+"RESET": SubResource("Animation_yi82d")
+}
+
+[node name="GUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_4yof3")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(576, 294)
+texture = ExtResource("1_ojpxl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Sprite2D"]
+visible = false
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -344.5
+offset_right = -256.0
+offset_bottom = -167.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="Control/Sprite2D/VBoxContainer"]
+layout_mode = 2
+text = "Good job sport,
+"
+horizontal_alignment = 1
+
+[node name="Time box" type="HBoxContainer" parent="Control/Sprite2D/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Time label" type="Label" parent="Control/Sprite2D/VBoxContainer/Time box"]
+layout_mode = 2
+text = "time taken:"
+horizontal_alignment = 1
+
+[node name="time" type="Label" parent="Control/Sprite2D/VBoxContainer/Time box"]
+layout_mode = 2
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Sprite2D/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="next" type="Button" parent="Control/Sprite2D/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Next
+"
+
+[node name="previous" type="Button" parent="Control/Sprite2D/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Reload"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control"]
+libraries = {
+"": SubResource("AnimationLibrary_g4nx7")
+}
+
+[connection signal="pressed" from="Control/Sprite2D/VBoxContainer/HBoxContainer/next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Control/Sprite2D/VBoxContainer/HBoxContainer/previous" to="." method="_on_previous_pressed"]

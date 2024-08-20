@@ -1,0 +1,110 @@
+[gd_scene load_steps=12 format=3 uid="uid://cqdkh8nxstt3m"]
+
+[ext_resource type="Script" path="res://Assets/md_box.gd" id="1_s3721"]
+[ext_resource type="Texture2D" uid="uid://dpm1ysw7yntgb" path="res://Art/Mediumbox.png" id="2_kft7g"]
+[ext_resource type="AudioStream" uid="uid://cdbck7allu0p8" path="res://Audio/medium grabwav.wav" id="3_52gnh"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fhifo"]
+friction = 0.5
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q7up"]
+size = Vector2(93.5, 71.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3m62b"]
+size = Vector2(128, 128)
+
+[sub_resource type="Animation" id="Animation_uqxgy"]
+resource_name = "Hifriction_2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:physics_material_override:friction")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_x5jvq"]
+resource_name = "Lowfriction"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:physics_material_override:friction")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.5]
+}
+
+[sub_resource type="Animation" id="Animation_ttknu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:physics_material_override:friction")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_re7xv"]
+_data = {
+"Hifriction_2": SubResource("Animation_uqxgy"),
+"Lowfriction": SubResource("Animation_x5jvq"),
+"RESET": SubResource("Animation_ttknu")
+}
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ur316"]
+random_pitch = 2.0
+streams_count = 1
+stream_0/stream = ExtResource("3_52gnh")
+
+[node name="Md_box" type="RigidBody2D" groups=["box"]]
+collision_layer = 4
+collision_mask = 4
+mass = 3.0
+physics_material_override = SubResource("PhysicsMaterial_fhifo")
+lock_rotation = true
+script = ExtResource("1_s3721")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-13, -33)
+collision_layer = 4
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(12.5, -38.5)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_2q7up")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -65)
+shape = SubResource("RectangleShape2D_3m62b")
+
+[node name="ColorRect" type="Sprite2D" parent="."]
+position = Vector2(0, -65)
+texture = ExtResource("2_kft7g")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_re7xv")
+}
+
+[node name="Grab" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_ur316")
+volume_db = 24.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
