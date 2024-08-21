@@ -2131,6 +2131,7 @@ priority = 100
 follow_mode = 2
 follow_target = NodePath("../Bot/Node2D")
 tween_resource = SubResource("Resource_fb6kq")
+draw_limits = true
 
 [node name="Bot" parent="." instance=ExtResource("12_v42kv")]
 position = Vector2(-423, -246)
@@ -2196,6 +2197,7 @@ position = Vector2(-1929, -1524)
 script = ExtResource("10_g557v")
 zoom = Vector2(0.2, 0.2)
 tween_resource = SubResource("Resource_c6lot")
+draw_limits = true
 
 [node name="Node2D" type="Node2D" parent="."]
 

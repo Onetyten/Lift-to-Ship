@@ -1,9 +1,9 @@
-res://Levels/Ware1.tscn
+res://Levels/Ware5.tscn
 res://Script/sm_box.gd
 res://bot.tscn
 res://Levels/Ware3.tscn
 res://Levels/Ware2.tscn
+res://Levels/Ware1.tscn
 res://Levels/Ware4.tscn
-res://Levels/Ware5.tscn
 res://Levels/thanks_for_playing.tscn
 res://Levels/Intro.tscn

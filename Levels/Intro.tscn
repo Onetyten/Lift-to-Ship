@@ -1192,6 +1192,7 @@ position = Vector2(-706, -300)
 script = ExtResource("22_1hc4t")
 priority = 100
 tween_resource = SubResource("Resource_ui141")
+draw_limits = true
 
 [connection signal="body_entered" from="Level/Bus/Completion_check" to="Level/Bus/Completion_check" method="_on_body_entered"]
 [connection signal="body_exited" from="Level/Bus/Completion_check" to="Level/Bus/Completion_check" method="_on_body_exited"]
